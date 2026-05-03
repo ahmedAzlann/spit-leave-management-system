@@ -416,3 +416,46 @@ LeaveClass
 ```
 
 Migrations are run automatically in Docker (`npx prisma migrate deploy` in the API container's `CMD`). For local dev, run `npm run db:migrate` inside `backend/`.
+
+
+
+## 🚀 CI/CD & DevOps Implementation (My Contribution)
+
+In addition to the core application, I implemented a complete CI/CD pipeline and containerized deployment for this project.
+
+### 🔧 Tools & Technologies
+- Jenkins (CI/CD automation)
+- Docker & Docker Compose (containerization)
+- Nginx (reverse proxy)
+- GitHub (version control & trigger source)
+
+### ⚙️ What I Implemented
+- Created a Jenkins Pipeline to automate build and deployment
+- Integrated GitHub repository with Jenkins using Poll SCM
+- Containerized the entire application (frontend, backend, database, proxy)
+- Automated deployment using Docker Compose
+- Configured Nginx reverse proxy for routing:
+  - `/api/*` → backend
+  - `/*` → frontend
+
+### 🔁 CI/CD Workflow
+
+### 🛠️ Key Challenges Solved
+- Fixed Docker access inside Jenkins container using Docker socket mounting
+- Resolved permission issues with Docker daemon
+- Fixed dependency issues (`npm ci` → `npm install`)
+- Resolved nginx configuration mount issue in CI environment by switching to Dockerfile-based COPY
+
+### ▶️ How to Run with Jenkins
+1. Start Jenkins container
+2. Create Pipeline job
+3. Connect GitHub repository
+4. Run pipeline → automatic deployment
+
+### 📸 Demo
+<img width="1600" height="850" alt="WhatsApp Image 2026-05-03 at 6 31 18 PM" src="https://github.com/user-attachments/assets/7ecc73f0-03a5-4d97-867b-502bb2769821" />
+
+
+<img width="1600" height="850" alt="WhatsApp Image 2026-05-03 at 6 31 18 PM" src="https://github.com/user-attachments/assets/db0f2243-bad5-4a79-bede-07d74be816e2" />
+
+<img width="1600" height="850" alt="WhatsApp Image 2026-05-03 at 6 38 07 PM" src="https://github.com/user-attachments/assets/2e6e7c03-e664-4c0d-a2e6-4615a1b6cfc0" />
