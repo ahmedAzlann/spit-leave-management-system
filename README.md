@@ -456,6 +456,7 @@ In addition to the core application, I implemented a complete CI/CD pipeline and
 <img width="1600" height="850" alt="WhatsApp Image 2026-05-03 at 6 31 18 PM" src="https://github.com/user-attachments/assets/7ecc73f0-03a5-4d97-867b-502bb2769821" />
 
 
-<img width="1600" height="850" alt="WhatsApp Image 2026-05-03 at 6 31 18 PM" src="https://github.com/user-attachments/assets/db0f2243-bad5-4a79-bede-07d74be816e2" />
+<img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/761061f1-b26f-40dc-ab35-d0495f2ae721" />
+
 
 <img width="1600" height="850" alt="WhatsApp Image 2026-05-03 at 6 38 07 PM" src="https://github.com/user-attachments/assets/2e6e7c03-e664-4c0d-a2e6-4615a1b6cfc0" />
